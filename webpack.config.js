@@ -5,6 +5,7 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   filename: 'index.html',
   inject: 'body'
 });
+
 module.exports = {
   entry: [
     './app/index.js'
