@@ -72,3 +72,40 @@ var Avatar = function(props) {
 
 <Avatar username='tylermcginnis' />
 //___________________end____________________//
+
+//     S
+//      P
+//       A
+//        A
+//          A
+//               A
+//                  A
+//                    A
+//                     A
+//                  A
+//                  A
+//               A
+//                A
+//              A
+//                 C
+//                   E
+
+
+<Icon
+  name='fontawesome|facebook-square'
+  size={70} //ohgod what if it gets a string
+  color='#F3F3F3'
+  style={styles.facebook}
+/>
+//________BETTER DONE AS________//
+var React = require('react')
+var PropTypes = React.PropTypes
+var Icon = React.createClass({
+  proptypes: {
+    name: PropTypes.string.isRequired,
+    size: PropTypes.number.isRequired,
+    color: PropTypes.string.isRequired,
+    style: PropTypes.object
+  },
+  render: BLAH BLAH BLAH
+})
