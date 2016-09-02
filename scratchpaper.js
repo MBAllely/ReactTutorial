@@ -109,3 +109,31 @@ var Icon = React.createClass({
   },
   render: BLAH BLAH BLAH
 })
+
+
+var Loading = React.createClass({
+  getDefaultProps: function() {
+    return {
+      text: 'Loading'
+    }
+  },
+  render: function() {
+    return {
+      <div>HAY GIRL HAY</div>
+    }
+  }
+});
+
+var FriendsList = React.createClass({
+  componentDidMount: function() {
+    return Axios.get(this.props.url).then(this.props.callback)
+  },
+  componentWillUnmount: function() {
+    ref.off()
+  },
+  render: function() {
+    return {
+      <div>YOOOOOOOOO</div>
+    }
+  }
+})
